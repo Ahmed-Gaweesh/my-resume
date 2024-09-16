@@ -6,20 +6,18 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Modern font */
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f0f2f5; /* Light background color */
     color: #333;
-    margin: 0;
-    padding: 0;
 }
 
 header {
-    text-align: center;
-    padding: 40px 20px; /* Added padding to ensure enough space */
-    background: #333;
+    background: linear-gradient(to right, #004d40, #009688); /* Gradient background */
     color: #fff;
-    border-bottom: 2px solid #333;
+    text-align: center;
+    padding: 60px 20px; /* Increased padding for hero effect */
+    position: relative;
 }
 
 .header-content {
@@ -29,20 +27,22 @@ header {
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 150px; /* Slightly larger profile picture */
+    height: 150px;
     border-radius: 50%;
-    border: 3px solid #fff;
-    margin-bottom: 15px; /* Added margin for spacing below the image */
+    border: 4px solid #fff; /* Thicker border */
+    margin-bottom: 20px; /* Increased margin */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em; /* Larger heading */
     margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 nav {
@@ -52,60 +52,71 @@ nav {
 
 nav ul {
     list-style: none;
-    display: inline-flex;
-    gap: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #fff; /* White text */
     font-weight: bold;
+    padding: 10px 20px; /* Added padding for better clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s ease;
 }
 
 nav a:hover {
-    color: #007BFF;
+    background: #007BFF; /* Hover background color */
+    color: #fff; /* Hover text color */
 }
 
 section {
     background: #fff;
     padding: 20px;
     margin: 20px auto; /* Center the section and add margin at the bottom */
-    max-width: 800px; /* Set a max-width for better readability */
-    border-radius: 5px;
+    max-width: 900px; /* Increased max-width for better readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    border-bottom: 3px solid #007BFF; /* Blue accent line */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em; /* Larger heading */
 }
 
 section h3 {
-    margin-bottom: 10px;
-    color: #007BFF;
+    margin-bottom: 15px;
+    color: #007BFF; /* Accent color */
 }
 
 section h4 {
-    margin-top: 15px;
+    margin-top: 20px;
     color: #333;
 }
 
 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     border-top: 2px solid #333;
-    background: #fff;
-    border-radius: 5px;
+    background: #004d40; /* Darker background */
+    color: #fff;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
+footer p {
+    margin: 0;
+}
+
 /* Specific style for contact email */
 #contact p {
-    color: #fff; /* Set font color to white */
+    color: #fff; /* White text color for email */
 }
