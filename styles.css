@@ -59,16 +59,23 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #4169E1; /* White text */
+    color: #e0e0e0; /* Light color for better contrast */
     font-weight: bold;
     padding: 10px 20px; /* Added padding for better clickable area */
     border-radius: 5px; /* Rounded corners */
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-    background: #007BFF; /* Hover background color */
-    color: #fff; /* Hover text color */
+    background: #0056b3; /* Darker blue background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Ensure focus state for accessibility */
+nav a:focus {
+    outline: 3px solid #ffa500; /* High-contrast outline */
+    background-color: #003d7a; /* Darker blue background on focus */
+    color: #fff; /* White text color on focus */
 }
 
 section {
