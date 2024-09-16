@@ -10,21 +10,30 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    padding: 20px;
-}
-
-.profile-pic {
-  width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    margin: 0 auto 10px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     text-align: center;
-    padding-bottom: 20px;
+    padding: 40px 20px; /* Added padding to ensure enough space */
+    background: #333;
+    color: #fff;
     border-bottom: 2px solid #333;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 15px; /* Added margin for spacing below the image */
 }
 
 header h1 {
@@ -32,14 +41,8 @@ header h1 {
     margin-bottom: 10px;
 }
 
-header h2 {
-    font-size: 1.5em;
-    color: #555;
-    margin-bottom: 10px;
-}
-
 header p {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 nav {
@@ -66,8 +69,15 @@ nav a:hover {
 section {
     background: #fff;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto; /* Center the section and add margin at the bottom */
+    max-width: 800px; /* Set a max-width for better readability */
     border-radius: 5px;
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 section h3 {
@@ -90,8 +100,7 @@ footer {
     border-top: 2px solid #333;
     background: #fff;
     border-radius: 5px;
-}
-
-footer p {
-    color: #777;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
